@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Box-level (block)*/
+
+            /*usar inspecionar elemento no site para ajuda a entender(h1)*/
+
+            background-color: lightgray;
+
+            height: 300px; /*box-size (caixa)*/
+            width: 300px;
+
+            border: 10px solid darkslategray; 
+
+            padding: 10px;    /*ordem funciona como um relogio, cima, direita, baixo, esquerda, e se os 4 tamanhos for o mesmo basta digitar 1 vez, se colocar 2 valor fica cima e baixo igual e direita e esquerda igual o valor escrito*/
+
+            margin: 20px auto 40px auto; /*tambem consigo deixa a borda esquerda e da direita automatizada(auto) assim ficara no meio de acordo com o tamanho da tela*/
+
+            outline: 5px dashed aqua;
+
+        }
+        
+        a{ /*inline-level*/
+
+           display: block; /*link fica em bloco se apaga o codigo fica em inline, link segue na mesma linha porem não da para ajustar tamanho, já o inline block sim*/
+           border: 10px solid red;
+
+           padding: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>
