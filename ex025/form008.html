@@ -9,15 +9,25 @@
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
     <p>
-       <label for="in">Número 1: </label>
-       <imput type="number" name="n1" id="in1" min="0" max="50" required >
-        
-       </imput>
+       <label for="in1">Número 1: </label>
+       <input type="number" name="n1" id="in1" min="0" max="50" required  oninput="isoma.innerHTML = Number(in1.value) + Number (in2.value)">
     </p>
+
     <p>
-        <imput type="submit" value="Enviar" >
-        <imput type="reset" value="Limpar" >
+        <label for="in2">Número 2:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number (in2.value)"> <!--esse trabalho de soma nao serve para enviar dados porque a soma nao e enviada-->
+    </p>
+
+    <p>
+        <label for="isoma">Soma: </label>
+        <output name="soma" id="isoma">0</output>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar" >
+        <input type="reset" value="Limpar" >
     </p>
 </form>
+
 </body>
 </html>
