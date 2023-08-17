@@ -16,7 +16,7 @@ Grandes telas: acima de 1201px
     }
 
     body {
-        background-image: url(../imagens/icon-print.png);
+        background-image: url(../imagens/back-print.jpg);
     }
 
     main {
@@ -34,11 +34,16 @@ Grandes telas: acima de 1201px
         content: 'Essa Impressão foi feita atravéz do site www.cursoemvideo.com';
         text-decoration: overline;
     }
-    
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print {display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
          
 }
 
-@media screen and (min-width: 481px) and (max-width:768px) { /*TABLET */
+@media screen and (min-width: 481px) and (max-width: 1024px) { /*TABLET */
 
     body {
         background-image: url(../imagens/back-tablet.jpg);
