@@ -6,12 +6,13 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--passo 1 icone-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <span class="material-icons">menu</span><!--passo 2 do icone , para muda o simbolo do icone agora e so troca o nome(menu), de acordo com oque ta escrito no site do google de icones -->
+        <i id="burguer" class="material-icons" onclick= "clickMenu()">menu</i><!--passo 2 do icone , para muda o simbolo do icone agora e so troca o nome(menu), de acordo com oque ta escrito no site do google de icones -->
         <menu>
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -25,19 +26,21 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed fugiat nobis et, iusto placeat rem consectetur blanditiis in nisi. Consequatur eligendi obcaecati, dignissimos cum itaque quod cupiditate maxime officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci fugiat, tempora nulla quibusdam autem a rem distinctio in consectetur perspiciatis atque deleniti pariatur nihil beatae magnam iste impedit? Molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde esse, molestias minus architecto ullam laudantium veritatis quaerat vitae vel quam dolore aperiam laboriosam perspiciatis adipisci necessitatibus magni sunt sint accusamus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed fugiat nobis et, iusto placeat rem consectetur blanditiis in nisi. Consequatur eligendi obcaecati, dignissimos cum itaque quod cupiditate maxime officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci fugiat, tempora nulla quibusdam autem a rem distinctio in consectetur perspiciatis atque deleniti pariatur nihil beatae magnam iste impedit? Molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde esse, molestias minus architecto ullam laudantium veritatis quaerat vitae vel quam dolore aperiam laboriosam perspiciatis adipisci necessitatibus magni sunt sint accusamus.
+
+            </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed fugiat nobis et, iusto placeat rem consectetur blanditiis in nisi. Consequatur eligendi obcaecati, dignissimos cum itaque quod cupiditate maxime officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci fugiat, tempora nulla quibusdam autem a rem distinctio in consectetur perspiciatis atque deleniti pariatur nihil beatae magnam iste impedit? Molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laudantium ipsa quisquam tempora et, sapiente asperiores quo odio aut quibusdam beatae incidunt dolorem voluptas reiciendis maxime. Perferendis dolores optio laudantium?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed fugiat nobis et, iusto placeat rem consectetur blanditiis in nisi. Consequatur eligendi obcaecati, dignissimos cum itaque quod cupiditate maxime officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci fugiat, tempora nulla quibusdam autem a rem distinctio in consectetur perspiciatis atque deleniti pariatur nihil beatae magnam iste impedit? Molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla suscipit saepe corporis soluta rem aut eveniet, reiciendis debitis unde maiores odit! Odio ratione perspiciatis exercitationem omnis saepe! Doloribus, laboriosam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed fugiat nobis et, iusto placeat rem consectetur blanditiis in nisi. Consequatur eligendi obcaecati, dignissimos cum itaque quod cupiditate maxime officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci fugiat, tempora nulla quibusdam autem a rem distinctio in consectetur perspiciatis atque deleniti pariatur nihil beatae magnam iste impedit? Molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla suscipit saepe corporis soluta rem aut eveniet, reiciendis debitis unde maiores odit! Odio ratione perspiciatis exercitationem omnis saepe! Doloribus, laboriosam.
+            </p>
         </article>
     </main>
     <script>
-        function clickMenu()
+        function clickMenu() {
         if (itens.style.display == 'block')
-        itens.style.display =  'none'
+            itens.style.display =  'none';
         } else {
-            itens.style.display= 'block'
+            itens.style.display= 'block';
         }
-
    </script>
 </body>
 </html>
