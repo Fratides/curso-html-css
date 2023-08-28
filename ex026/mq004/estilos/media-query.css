@@ -2,14 +2,14 @@
 
 /* Todas as Demais midias*/
 
-/*typical Device Breakpoints
-Mobile: 320px até 480px
-Tablet: 481px até 768px
-Pequenas Telas: de 769px até 1024px
-Desktop: 1025px até 1200px
-Grandes telas: acima de 1201px
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas telas: atá 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
 */
-
 @media print { /*IMPRESSÃO*/
     * {
     font-family: 'Courier New', Courier, monospace;
@@ -43,7 +43,7 @@ Grandes telas: acima de 1201px
          
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) { /*TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET */
 
     body {
         background-image: url(../imagens/back-tablet.jpg);
@@ -56,7 +56,7 @@ Grandes telas: acima de 1201px
     img#tv { display: none;}
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {/*DESKTOP*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*DESKTOP*/
     body {
         background-image: url(../imagens/back-pc.jpg);
     }

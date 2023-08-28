@@ -12,8 +12,8 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick= "clickMenu()">menu</i><!--passo 2 do icone , para muda o simbolo do icone agora e so troca o nome(menu), de acordo com oque ta escrito no site do google de icones -->
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i><!--passo 2 do icone , para muda o simbolo do icone agora e so troca o nome(menu), de acordo com oque ta escrito no site do google de icones -->
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -36,11 +36,12 @@
     </main>
     <script>
         function clickMenu() {
-        if (itens.style.display == 'block')
-            itens.style.display =  'none';
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
         } else {
-            itens.style.display= 'block';
-        }
+            itens.style.display= 'block'
+          }
+       }
    </script>
 </body>
 </html>
