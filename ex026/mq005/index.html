@@ -7,9 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--passo 1 icone-->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i><!--passo 2 do icone , para muda o simbolo do icone agora e so troca o nome(menu), de acordo com oque ta escrito no site do google de icones //// onclick é java script -->
@@ -35,7 +34,16 @@
         </article>
     </main>
     <script>
-        function clickMenu() { /*java script*/
+
+        function mudouTamanho () { /*mostrar opções de menu ao encolher pela tela pequena ////java script*/
+            if (window.innerWidth>=768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() { /*encolher opções em tela pequena para não ocupa muito espaço ////java script*/
         if (itens.style.display == 'block') {
             itens.style.display = 'none'
         } else {
