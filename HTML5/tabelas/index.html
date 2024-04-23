@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Criação de Tabelas no HTML</h1>
+     <table border="1"> <!-- começo da tabela-->
+        <tr>
+            <th>Coluna1</th><!--titulos de tabelas em negrito-->
+            <th>Coluna2</th>
+        </tr>
+        <tr>
+            <td>Dado1</td>
+            <td>Dado2</td>
+        </tr>
+        <tr>
+            <td>Dado3</td>
+            <td>Dado4</td>
+        </tr>
+     </table>
+
+     <hr><!-- Linha Separadora -->
+
+      <h2>Tabelas com Cabeçalho</h2>
+
+      <table border="1">
+        <thead> <!-- head da tabela (Organização)-->
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody> <!-- body da tabela (organização)-->
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Engênheiro</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+                <td>Advogada</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>Tabelas com Células Personalizadas</h2>
+      <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Informações Pessoais</th> <!-- colspan = as informacoes vai ocupar 2 colunas -->
+                <th>Contato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome:</td>
+                <td>João</td>
+                <td rowspan="2">Telefone:1234567891011</td><!-- rowspan = vai servir para as duas linha porque vai fica no meio para a mesma pessoa -->
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+      </table>
+</body> 
+</html>
